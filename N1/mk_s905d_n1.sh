@@ -126,7 +126,7 @@ SSHD_CIPHERS="aes128-gcm@openssh.com,aes256-gcm@openssh.com,aes256-ctr,aes192-ct
 check_depends
 
 SKIP_MB=4
-BOOT_MB=256
+BOOT_MB=512
 ROOTFS_MB=2048
 SIZE=$((SKIP_MB + BOOT_MB + ROOTFS_MB))
 create_image "$TGT_IMG" "$SIZE"
